@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Learning | Instructional Design & Human Risk Portfolio</title>
+    <!-- Tailwind CSS CDN for styling -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-950 text-gray-100 font-sans antialiased selection:bg-teal-500 selection:text-gray-900">
+
+    <!-- Header / Branding -->
+    <header class="border-b border-gray-900 sticky top-0 bg-gray-950/80 backdrop-blur-md z-50">
+        <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="font-bold tracking-tight text-xl text-teal-400">jslearning<span class="text-gray-500">.design</span></a>
+            <nav class="space-x-6 text-sm font-medium text-gray-400">
+                <a href="#work" class="hover:text-teal-400 transition-colors">Selected Work</a>
+                <a href="#about" class="hover:text-teal-400 transition-colors">Philosophy</a>
+                <a href="mailto:your.email@example.com" class="bg-teal-500 text-gray-950 px-3 py-1.5 rounded-md hover:bg-teal-400 transition-all font-semibold">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section: Framed for a Tech/SaaS Audience -->
+    <section class="max-w-5xl mx-auto px-6 pt-20 pb-16">
+        <div class="max-w-3xl">
+            <span class="text-xs font-bold uppercase tracking-widest text-teal-500 bg-teal-950/50 px-2.5 py-1 rounded-full border border-teal-900/50">Instructional Architecture</span>
+            <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mt-4 mb-6 leading-tight">
+                Designing behavioral interventions that reduce organizational risk.
+            </h1>
+            <p class="text-lg text-gray-400 leading-relaxed">
+                I build micro-learning experiences, rapid video briefings, and high-impact interactive modules engineered for modern, fast-moving teams. Bridging the gap between cognitive science and clean web interfaces.
+            </p>
+        </div>
+    </section>
+
+    <!-- Project Section (The Core Case Study) -->
+    <main id="work" class="max-w-5xl mx-auto px-6 py-12 border-t border-gray-900">
+        <h2 class="text-2xl font-bold tracking-tight mb-8">Selected Case Study</h2>
+        
+        <article class="bg-gray-900/40 rounded-2xl border border-gray-900 p-6 md:p-8 backdrop-blur-sm">
+            <!-- Project Meta Data Table (Startup Friendly) -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8 pb-6 border-b border-gray-800 text-sm">
+                <div>
+                    <span class="text-gray-500 block text-xs uppercase font-semibold">The Target</span>
+                    <span class="text-gray-300 font-medium">Phishing & Social Engineering</span>
+                </div>
+                <div>
+                    <span class="text-gray-500 block text-xs uppercase font-semibold">Intervention</span>
+                    <span class="text-gray-300 font-medium">3-Min Interactive Simulation</span>
+                </div>
+                <div>
+                    <span class="text-gray-500 block text-xs uppercase font-semibold">Metrics Driven</span>
+                    <span class="text-gray-300 font-medium text-teal-400 font-semibold">-38% Click Rate</span>
+                </div>
+                <div>
+                    <span class="text-gray-500 block text-xs uppercase font-semibold">Infrastructure</span>
+                    <span class="text-gray-300 font-medium">Articulate / AWS Cloud Front</span>
+                </div>
+            </div>
+
+            <!-- Case Study Context -->
+            <div class="max-w-3xl mb-8">
+                <h3 class="text-xl font-bold text-gray-100 mb-3">Case Study: Defeating Context-Switch Attack Vectors</h3>
+                <p class="text-gray-400 leading-relaxed mb-4">
+                    Generic compliance videos fail because they don't challenge active memory. This modular intervention drops employees directly into a simulated browser tab fatigue scenario, forcing split-second authentication decisions.
+                </p>
+            </div>
+
+            <!-- The Live Interactive iFrame Container -->
+            <div class="space-y-2">
+                <div class="flex items-center justify-between text-xs text-gray-500 px-1">
+                    <span class="flex items-center gap-1.5">
+                        <span class="h-2 w-2 rounded-full bg-emerald-500 inline-block animate-pulse"></span> 
+                        Interactive Module Preview
+                    </span>
+                    <span>Fully Responsive</span>
+                </div>
+                
+                <!-- Aspect Ratio Box for Storyline/Rise (16:9 standard, scalable) -->
+                <div class="relative w-full rounded-xl overflow-hidden border-2 border-gray-800 bg-gray-950 aspect-video shadow-2xl">
+                    <!-- REPLACE the src URL below with your actual Google Cloud/AWS https link -->
+                    <iframe 
+                        src="https://www.w3schools.com" 
+                        class="absolute top-0 left-0 w-full h-full border-0" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <!-- Design Philosophy / About Section -->
+    <section id="about" class="max-w-5xl mx-auto px-6 py-16 border-t border-gray-900">
+        <div class="grid md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-lg font-bold text-gray-200 mb-2">Micro-Interventions</h3>
+                <p class="text-sm text-gray-400 leading-relaxed">Cognitive overload kills learning retention. I build hyper-focused modules targeting exact behavioral adjustments rather than sweeping policy dumps.</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold text-gray-200 mb-2">Web Architecture</h3>
+                <p class="text-sm text-gray-400 leading-relaxed">Instructional design is software development. Deploying assets cleanly to edge caches ensures zero-friction loading speeds globally.</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold text-gray-200 mb-2">Quantifiable Risk</h3>
+                <p class="text-sm text-gray-400 leading-relaxed">Engagement stats don't mean behavior changed. I track post-training action analytics to tie course completions to real safety metrics.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Minimal Footer -->
+    <footer class="max-w-5xl mx-auto px-6 py-8 border-t border-gray-900 text-center text-xs text-gray-600">
+        &copy; 2026 JS Learning. Built on GitHub Pages via Tailwind.
+    </footer>
+
+</body>
+</html>
