@@ -24,33 +24,45 @@
 <body class="bg-slate-50 text-[#071e17] antialiased selection:bg-[#dfc493]/30">
 
     <!-- Header -->
-    <header class="bg-[#071e17] sticky top-0 z-50 border-b border-white/10 backdrop-blur">
-        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<header class="border-b border-white/10 sticky top-0 bg-[#071e17]/95 backdrop-blur-md z-50">
 
-            <a href="index.html" class="flex items-center gap-3">
-                <img src="logo.png" alt="JS Monogram" class="w-10 h-10 object-contain">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-center relative">
 
-                <span class="text-xl tracking-tight flex items-baseline">
-   			<span class="text-[#dfc493] font-semibold">learning</span><span class="text-white font-light">.design</span>
-		</span>
+        <!-- Left Brand Anchor -->
+        <a href="index.html" class="absolute left-6 flex items-center gap-3">
+
+            <div class="w-10 h-10 flex items-center justify-center shrink-0">
+                <img src="logo.png" alt="JS Monogram" class="w-full h-full object-contain">
+            </div>
+
+            <!-- EXACT ORIGINAL WORDMARK STYLES -->
+            <span class="text-xl tracking-tight flex items-baseline">
+                <span class="text-[#dfc493] font-semibold">learning</span>
+                <span class="text-white font-light">.design</span>
+            </span>
+
+        </a>
+
+        <!-- CENTER NAV (EXACT ORIGINAL SYSTEM) -->
+        <nav class="hidden md:flex items-center gap-8 text-[16px] font-semibold uppercase tracking-[0.22em] text-slate-300">
+
+            <a href="projects.html" class="hover:text-[#dfc493] transition-colors duration-300">
+                Projects
             </a>
 
-            <nav class="hidden md:flex items-center gap-8 text-[11px] font-semibold uppercase tracking-[0.22em] text-slate-300">
-                <a href="projects.html" class="hover:text-[#dfc493] transition-colors duration-300">
-                    Projects
-                </a>
+            <a href="about.html" class="hover:text-[#dfc493] transition-colors duration-300">
+                About
+            </a>
 
-                <a href="about.html" class="hover:text-[#dfc493] transition-colors duration-300">
-                    About
-                </a>
+            <a href="contact.html" class="hover:text-[#dfc493] transition-colors duration-300">
+                Contact
+            </a>
 
-                <a href="contact.html" class="hover:text-[#dfc493] transition-colors duration-300">
-                    Contact
-                </a>
-            </nav>
+        </nav>
 
-        </div>
-    </header>
+    </div>
+
+</header>
 
 <main class="max-w-3xl mx-auto px-6 py-32 text-center">
 
