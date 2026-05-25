@@ -44,23 +44,36 @@
         </a>
 
         <!-- CENTER NAV (EXACT ORIGINAL SYSTEM) -->
-        <nav class="hidden md:flex items-center gap-8 text-[16px] font-semibold uppercase tracking-[0.22em] text-slate-300">
 
-            <a href="projects.html" class="hover:text-[#dfc493] transition-colors duration-300">
-                Projects
-            </a>
+	<!-- Desktop Nav -->
+	<nav class="hidden md:flex items-center gap-8 text-[16px] font-semibold uppercase tracking-[0.22em] text-slate-300">
+   		<a href="projects.html" class="hover:text-[#dfc493] transition-colors duration-300">Projects</a>
+    		<a href="about.html" class="hover:text-[#dfc493] transition-colors duration-300">About</a>
+   		<a href="contact.html" class="hover:text-[#dfc493] transition-colors duration-300">Contact</a>
+	</nav>
 
-            <a href="about.html" class="hover:text-[#dfc493] transition-colors duration-300">
-                About
-            </a>
-
-            <a href="contact.html" class="hover:text-[#dfc493] transition-colors duration-300">
-                Contact
-            </a>
-
-        </nav>
+	<!-- Mobile Button -->
+	<button id="menuBtn" class="md:hidden text-slate-200 text-sm uppercase tracking-widest">
+   		 Menu
+	</button>
 
     </div>
+
+<div id="mobileMenu" class="hidden md:hidden absolute top-20 left-0 w-full bg-[#061a14]/95 backdrop-blur-md border-b border-white/10">
+    <div class="flex flex-col px-6 py-6 gap-6 text-sm uppercase tracking-[0.2em]">
+        <a href="projects.html" class="text-slate-200">Projects</a>
+        <a href="about.html" class="text-slate-200">About</a>
+        <a href="contact.html" class="text-slate-200">Contact</a>
+    </div>
+
+</div>
+
+<script>
+document.getElementById("menuBtn")?.addEventListener("click", () => {
+const menu = document.getElementById("mobileMenu");
+menu.classList.toggle("hidden");
+});
+</script>
 
 </header>
 
