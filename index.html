@@ -1,117 +1,348 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS Learning | Instructional Design & Human Risk Portfolio</title>
-    <!-- Tailwind CSS CDN for styling -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
-<body class="bg-gray-950 text-gray-100 font-sans antialiased selection:bg-teal-500 selection:text-gray-900">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jordan Shelley | Behavioral Learning Architecture</title>
 
-    <!-- Header / Branding -->
-    <header class="border-b border-gray-900 sticky top-0 bg-gray-950/80 backdrop-blur-md z-50">
-        <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
-            <a href="#" class="font-bold tracking-tight text-xl text-teal-400">jslearning<span class="text-gray-500">.design</span></a>
-            <nav class="space-x-6 text-sm font-medium text-gray-400">
-                <a href="#work" class="hover:text-teal-400 transition-colors">Selected Work</a>
-                <a href="#about" class="hover:text-teal-400 transition-colors">Philosophy</a>
-                <a href="mailto:your.email@example.com" class="bg-teal-500 text-gray-950 px-3 py-1.5 rounded-md hover:bg-teal-400 transition-all font-semibold">Contact</a>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Editorial Serif Accent -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&display=swap" rel="stylesheet">
+
+    <style>
+        .editorial-serif {
+            font-family: "Cormorant Garamond", serif;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-[#071e17] antialiased selection:bg-[#dfc493]/30">
+
+    <!-- Header -->
+    <header class="bg-[#071e17] sticky top-0 z-50 border-b border-white/10 backdrop-blur">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="logo.png" alt="JS Monogram" class="w-10 h-10 object-contain">
+
+                <span class="text-xl tracking-tight">
+                    <span class="text-[#dfc493] font-semibold">learning</span>
+                    <span class="text-white font-light">.design</span>
+                </span>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 text-[11px] font-semibold uppercase tracking-[0.22em] text-slate-300">
+                <a href="projects.html" class="hover:text-[#dfc493] transition-colors duration-300">
+                    Projects
+                </a>
+
+                <a href="about.html" class="hover:text-[#dfc493] transition-colors duration-300">
+                    About
+                </a>
+
+                <a href="contact.html" class="hover:text-[#dfc493] transition-colors duration-300">
+                    Contact
+                </a>
             </nav>
+
         </div>
     </header>
 
-    <!-- Hero Section: Framed for a Tech/SaaS Audience -->
-    <section class="max-w-5xl mx-auto px-6 pt-20 pb-16">
-        <div class="max-w-3xl">
-            <span class="text-xs font-bold uppercase tracking-widest text-teal-500 bg-teal-950/50 px-2.5 py-1 rounded-full border border-teal-900/50">Instructional Architecture</span>
-            <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mt-4 mb-6 leading-tight">
-                Designing behavioral interventions that reduce organizational risk.
-            </h1>
-            <p class="text-lg text-gray-400 leading-relaxed">
-                I build micro-learning experiences, rapid video briefings, and high-impact interactive modules engineered for modern, fast-moving teams. Bridging the gap between cognitive science and clean web interfaces.
-            </p>
-        </div>
-    </section>
+    <!-- Main -->
+    <main>
 
-    <!-- Project Section (The Core Case Study) -->
-    <main id="work" class="max-w-5xl mx-auto px-6 py-12 border-t border-gray-900">
-        <h2 class="text-2xl font-bold tracking-tight mb-8">Selected Case Study</h2>
-        
-        <article class="bg-gray-900/40 rounded-2xl border border-gray-900 p-6 md:p-8 backdrop-blur-sm">
-            <!-- Project Meta Data Table (Startup Friendly) -->
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8 pb-6 border-b border-gray-800 text-sm">
-                <div>
-                    <span class="text-gray-500 block text-xs uppercase font-semibold">The Target</span>
-                    <span class="text-gray-300 font-medium">Phishing & Social Engineering</span>
-                </div>
-                <div>
-                    <span class="text-gray-500 block text-xs uppercase font-semibold">Intervention</span>
-                    <span class="text-gray-300 font-medium">3-Min Interactive Simulation</span>
-                </div>
-                <div>
-                    <span class="text-gray-500 block text-xs uppercase font-semibold">Metrics Driven</span>
-                    <span class="text-gray-300 font-medium text-teal-400 font-semibold">-38% Click Rate</span>
-                </div>
-                <div>
-                    <span class="text-gray-500 block text-xs uppercase font-semibold">Infrastructure</span>
-                    <span class="text-gray-300 font-medium">Articulate / AWS Cloud Front</span>
-                </div>
-            </div>
+        <!-- Hero -->
+        <section class="max-w-6xl mx-auto px-6 py-32">
 
-            <!-- Case Study Context -->
-            <div class="max-w-3xl mb-8">
-                <h3 class="text-xl font-bold text-gray-100 mb-3">Case Study: Defeating Context-Switch Attack Vectors</h3>
-                <p class="text-gray-400 leading-relaxed mb-4">
-                    Generic compliance videos fail because they don't challenge active memory. This modular intervention drops employees directly into a simulated browser tab fatigue scenario, forcing split-second authentication decisions.
-                </p>
-            </div>
+            <div class="grid lg:grid-cols-[1.2fr_420px] gap-20 items-center">
 
-            <!-- The Live Interactive iFrame Container -->
-            <div class="space-y-2">
-                <div class="flex items-center justify-between text-xs text-gray-500 px-1">
-                    <span class="flex items-center gap-1.5">
-                        <span class="h-2 w-2 rounded-full bg-emerald-500 inline-block animate-pulse"></span> 
-                        Interactive Module Preview
+                <!-- Left -->
+                <div>
+
+                    <span class="inline-flex items-center gap-3 text-[10px] font-bold uppercase tracking-[0.24em] text-[#dfc493] border border-[#dfc493]/30 bg-[#dfc493]/5 px-4 py-2 rounded-full mb-8">
+                        Behavioral Learning Architecture
                     </span>
-                    <span>Fully Responsive</span>
+
+                    <!-- Signature Divider -->
+                    <div class="w-16 h-px bg-[#dfc493] mb-8"></div>
+
+                    <h1 class="text-5xl lg:text-6xl font-bold tracking-tight leading-[1.05] text-[#071e17] max-w-4xl mb-8">
+                        Designing behavioral interventions that reduce organizational risk.
+                    </h1>
+
+                    <p class="text-lg leading-8 text-[#071e17]/75 max-w-2xl mb-10">
+                        I build modern learning systems, rapid operational briefings, and interactive behavioral interventions engineered to improve decision-making in high-risk environments.
+                    </p>
+
+                    <!-- Metrics -->
+                    <div class="flex flex-wrap gap-10 pt-4">
+
+                        <div>
+                            <div class="text-3xl editorial-serif text-[#071e17]">
+                                10k+
+                            </div>
+                            <div class="text-xs uppercase tracking-[0.18em] text-[#071e17]/50 mt-2">
+                                Employees Supported
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="text-3xl editorial-serif text-[#071e17]">
+                                Enterprise
+                            </div>
+                            <div class="text-xs uppercase tracking-[0.18em] text-[#071e17]/50 mt-2">
+                                Operational Systems
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="text-3xl editorial-serif text-[#071e17]">
+                                Behavior
+                            </div>
+                            <div class="text-xs uppercase tracking-[0.18em] text-[#071e17]/50 mt-2">
+                                Focused Design
+                            </div>
+                        </div>
+
+                    </div>
+
                 </div>
-                
-                <!-- Aspect Ratio Box for Storyline/Rise (16:9 standard, scalable) -->
-                <div class="relative w-full rounded-xl overflow-hidden border-2 border-gray-800 bg-gray-950 aspect-video shadow-2xl">
-                    <!-- REPLACE the src URL below with your actual Google Cloud/AWS https link -->
-                    <iframe 
-                        src="https://www.w3schools.com" 
-                        class="absolute top-0 left-0 w-full h-full border-0" 
-                        allowfullscreen>
-                    </iframe>
+
+                <!-- Portrait -->
+                <div class="relative">
+
+                    <div class="absolute -inset-5 border border-[#071e17]/10 rounded-[2rem]"></div>
+
+                    <img
+                        src="profile.jpg"
+                        alt="Jordan Shelley"
+                        class="relative w-full aspect-[4/5] object-cover rounded-[2rem] border border-[#071e17]/10 shadow-2xl"
+                    />
+
                 </div>
+
             </div>
-        </article>
+
+        </section>
+
+        <!-- Philosophy -->
+        <section class="max-w-6xl mx-auto px-6 py-32 border-t border-[#071e17]/10">
+
+            <div class="max-w-3xl">
+
+                <div class="w-16 h-px bg-[#dfc493] mb-8"></div>
+
+                <div class="text-[11px] uppercase tracking-[0.22em] text-[#dfc493] font-bold mb-6">
+                    Philosophy
+                </div>
+
+                <h2 class="editorial-serif text-5xl leading-tight text-[#071e17] mb-8">
+                    Learning design should operate like infrastructure — quietly shaping better decisions at scale.
+                </h2>
+
+                <p class="text-lg leading-8 text-[#071e17]/70">
+                    My approach combines behavioral psychology, operational systems thinking, and editorial clarity to create interventions that integrate naturally into real workflows rather than competing for attention.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- Featured Work -->
+        <section class="max-w-6xl mx-auto px-6 py-32 border-t border-[#071e17]/10">
+
+            <div class="flex items-end justify-between gap-10 mb-16 flex-wrap">
+
+                <div>
+
+                    <div class="w-16 h-px bg-[#dfc493] mb-8"></div>
+
+                    <div class="text-[11px] uppercase tracking-[0.22em] text-[#dfc493] font-bold mb-4">
+                        Selected Work
+                    </div>
+
+                    <h2 class="text-4xl font-bold tracking-tight">
+                        Behavioral systems designed for measurable operational impact.
+                    </h2>
+
+                </div>
+
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+
+                <!-- Project Card -->
+                <div class="group bg-white border border-[#071e17]/10 rounded-[2rem] p-10 hover:border-[#071e17]/25 transition-all duration-300">
+
+                    <div class="w-12 h-px bg-[#dfc493] mb-8"></div>
+
+                    <div class="text-[10px] uppercase tracking-[0.2em] text-[#dfc493] font-bold mb-5">
+                        Risk Reduction Strategy
+                    </div>
+
+                    <h3 class="text-2xl font-semibold leading-snug mb-6">
+                        Reducing credential-handling errors in distributed operational teams.
+                    </h3>
+
+                    <p class="text-[#071e17]/65 leading-8 mb-8">
+                        Designed rapid micro-learning interventions embedded directly into workflow moments to improve authentication behaviors and reduce security friction.
+                    </p>
+
+                    <div class="flex items-center justify-between text-sm">
+
+                        <span class="text-[#071e17]/40 uppercase tracking-[0.18em]">
+                            Case Study
+                        </span>
+
+                        <span class="text-[#071e17] group-hover:translate-x-1 transition-transform duration-300">
+                            →
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <!-- Project Card -->
+                <div class="group bg-white border border-[#071e17]/10 rounded-[2rem] p-10 hover:border-[#071e17]/25 transition-all duration-300">
+
+                    <div class="w-12 h-px bg-[#dfc493] mb-8"></div>
+
+                    <div class="text-[10px] uppercase tracking-[0.2em] text-[#dfc493] font-bold mb-5">
+                        Systems Alignment
+                    </div>
+
+                    <h3 class="text-2xl font-semibold leading-snug mb-6">
+                        Aligning platform analytics with behavioral performance indicators.
+                    </h3>
+
+                    <p class="text-[#071e17]/65 leading-8 mb-8">
+                        Mapped learner engagement patterns against operational outcomes to identify friction points and improve intervention precision.
+                    </p>
+
+                    <div class="flex items-center justify-between text-sm">
+
+                        <span class="text-[#071e17]/40 uppercase tracking-[0.18em]">
+                            Case Study
+                        </span>
+
+                        <span class="text-[#071e17] group-hover:translate-x-1 transition-transform duration-300">
+                            →
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Method -->
+        <section class="max-w-6xl mx-auto px-6 py-32 border-t border-[#071e17]/10">
+
+            <div class="mb-16">
+
+                <div class="w-16 h-px bg-[#dfc493] mb-8"></div>
+
+                <div class="text-[11px] uppercase tracking-[0.22em] text-[#dfc493] font-bold mb-4">
+                    Method
+                </div>
+
+                <h2 class="text-4xl font-bold tracking-tight max-w-3xl">
+                    A systems-based framework for designing behavioral change.
+                </h2>
+
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+
+                <!-- Diagnose -->
+                <div class="bg-white border border-[#071e17]/10 rounded-[2rem] p-10">
+
+                    <div class="editorial-serif text-4xl mb-6 text-[#071e17]/80">
+                        01
+                    </div>
+
+                    <div class="w-10 h-px bg-[#dfc493] mb-6"></div>
+
+                    <h3 class="text-xl font-semibold mb-5">
+                        Diagnose
+                    </h3>
+
+                    <p class="text-[#071e17]/65 leading-8">
+                        Identifying operational friction, behavioral gaps, and decision failures within real-world workflows.
+                    </p>
+
+                </div>
+
+                <!-- Architect -->
+                <div class="bg-white border border-[#071e17]/10 rounded-[2rem] p-10">
+
+                    <div class="editorial-serif text-4xl mb-6 text-[#071e17]/80">
+                        02
+                    </div>
+
+                    <div class="w-10 h-px bg-[#dfc493] mb-6"></div>
+
+                    <h3 class="text-xl font-semibold mb-5">
+                        Architect
+                    </h3>
+
+                    <p class="text-[#071e17]/65 leading-8">
+                        Designing targeted interventions aligned to cognitive load, user context, and operational constraints.
+                    </p>
+
+                </div>
+
+                <!-- Validate -->
+                <div class="bg-white border border-[#071e17]/10 rounded-[2rem] p-10">
+
+                    <div class="editorial-serif text-4xl mb-6 text-[#071e17]/80">
+                        03
+                    </div>
+
+                    <div class="w-10 h-px bg-[#dfc493] mb-6"></div>
+
+                    <h3 class="text-xl font-semibold mb-5">
+                        Validate
+                    </h3>
+
+                    <p class="text-[#071e17]/65 leading-8">
+                        Measuring engagement patterns and downstream behavioral outcomes to refine intervention effectiveness.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Closing -->
+        <section class="max-w-5xl mx-auto px-6 py-32 border-t border-[#071e17]/10 text-center">
+
+            <div class="w-16 h-px bg-[#dfc493] mx-auto mb-10"></div>
+
+            <h2 class="editorial-serif text-5xl leading-tight mb-8">
+                Strategic learning systems designed with editorial clarity and operational precision.
+            </h2>
+
+            <p class="text-lg leading-8 text-[#071e17]/65 max-w-2xl mx-auto mb-12">
+                Currently focused on cybersecurity, behavioral risk reduction, and scalable learning infrastructure for modern organizations.
+            </p>
+
+            <a
+                href="contact.html"
+                class="inline-flex items-center gap-3 bg-[#071e17] text-white px-8 py-4 rounded-full text-sm uppercase tracking-[0.2em] font-semibold hover:bg-[#0d2a20] transition-colors duration-300"
+            >
+                Start a Conversation
+            </a>
+
+        </section>
+
     </main>
-
-    <!-- Design Philosophy / About Section -->
-    <section id="about" class="max-w-5xl mx-auto px-6 py-16 border-t border-gray-900">
-        <div class="grid md:grid-cols-3 gap-8">
-            <div>
-                <h3 class="text-lg font-bold text-gray-200 mb-2">Micro-Interventions</h3>
-                <p class="text-sm text-gray-400 leading-relaxed">Cognitive overload kills learning retention. I build hyper-focused modules targeting exact behavioral adjustments rather than sweeping policy dumps.</p>
-            </div>
-            <div>
-                <h3 class="text-lg font-bold text-gray-200 mb-2">Web Architecture</h3>
-                <p class="text-sm text-gray-400 leading-relaxed">Instructional design is software development. Deploying assets cleanly to edge caches ensures zero-friction loading speeds globally.</p>
-            </div>
-            <div>
-                <h3 class="text-lg font-bold text-gray-200 mb-2">Quantifiable Risk</h3>
-                <p class="text-sm text-gray-400 leading-relaxed">Engagement stats don't mean behavior changed. I track post-training action analytics to tie course completions to real safety metrics.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Minimal Footer -->
-    <footer class="max-w-5xl mx-auto px-6 py-8 border-t border-gray-900 text-center text-xs text-gray-600">
-        &copy; 2026 JS Learning. Built on GitHub Pages via Tailwind.
-    </footer>
 
 </body>
 </html>
