@@ -44,69 +44,238 @@
         </a>
 
         <!-- CENTER NAV (EXACT ORIGINAL SYSTEM) -->
-        <nav class="hidden md:flex items-center gap-8 text-[16px] font-semibold uppercase tracking-[0.22em] text-slate-300">
 
-            <a href="projects.html" class="hover:text-[#dfc493] transition-colors duration-300">
-                Projects
-            </a>
+	<!-- Desktop Nav -->
+	<nav class="hidden md:flex items-center gap-8 text-[16px] font-semibold uppercase tracking-[0.22em] text-slate-300">
+   		<a href="projects.html" class="hover:text-[#dfc493] transition-colors duration-300">Projects</a>
+    		<a href="about.html" class="hover:text-[#dfc493] transition-colors duration-300">About</a>
+   		<a href="contact.html" class="hover:text-[#dfc493] transition-colors duration-300">Contact</a>
+	</nav>
 
-            <a href="about.html" class="hover:text-[#dfc493] transition-colors duration-300">
-                About
-            </a>
+	<!-- Mobile Hamburger -->
+<button id="menuBtn" class="md:hidden absolute right-6 flex flex-col justify-center items-end gap-[5px] w-10 h-10">
 
-            <a href="contact.html" class="hover:text-[#dfc493] transition-colors duration-300">
-                Contact
-            </a>
+    <span class="w-6 h-[2px] bg-slate-200"></span>
+    <span class="w-5 h-[2px] bg-slate-200"></span>
+    <span class="w-6 h-[2px] bg-slate-200"></span>
 
-        </nav>
+</button>
 
     </div>
+
+<div id="mobileMenu" class="hidden md:hidden absolute top-20 left-0 w-full bg-[#061a14]/95 backdrop-blur-md border-b border-white/10">
+    <div class="flex flex-col px-6 py-6 gap-6 text-sm uppercase tracking-[0.2em]">
+        <a href="projects.html" class="text-slate-200">Projects</a>
+        <a href="about.html" class="text-slate-200">About</a>
+        <a href="contact.html" class="text-slate-200">Contact</a>
+    </div>
+
+</div>
+
+<script>
+document.getElementById("menuBtn")?.addEventListener("click", () => {
+const menu = document.getElementById("mobileMenu");
+menu.classList.toggle("hidden");
+});
+</script>
 
 </header>
 
-<main class="max-w-6xl mx-auto px-6 py-24">
+ <!-- Main -->
+<main>
 
-    <div class="w-16 h-px bg-[#dfc493] mb-8"></div>
+    <!-- Compact Page Hero -->
+    <section class="max-w-6xl mx-auto px-6 pt-16 md:pt-24 pb-10 md:pb-14">
 
-    <h1 class="text-5xl font-bold mb-6">
-        Selected Case Studies
-    </h1>
+        <div class="max-w-3xl">
 
-    <p class="text-lg text-[#071e17]/70 max-w-2xl mb-16 leading-8">
-        Behavioral learning systems designed for operational environments where decisions carry risk.
-    </p>
+            <div class="w-14 md:w-16 h-px bg-[#dfc493] mb-6"></div>
 
-    <div class="grid md:grid-cols-2 gap-6">
-
-        <div class="bg-white border border-[#071e17]/10 rounded-[2rem] p-10">
-            <div class="w-12 h-px bg-[#dfc493] mb-8"></div>
-            <div class="text-[10px] uppercase tracking-[0.2em] text-[#dfc493] mb-4">
-                Security Behavior
+            <div class="text-[10px] md:text-[11px] uppercase tracking-[0.22em] text-[#dfc493] font-bold mb-4">
+                Selected Work
             </div>
-            <h2 class="text-2xl font-semibold mb-6">
-                Reducing credential misuse in distributed teams
-            </h2>
-            <p class="text-[#071e17]/65 leading-8">
-                Workflow-embedded microlearning interventions targeting authentication decision points.
+
+            <h1 class="text-3xl md:text-5xl font-bold tracking-tight leading-[1.08] text-[#071e17] mb-5">
+                Projects that connect learning to real decisions.
+            </h1>
+
+            <p class="text-base md:text-lg leading-7 md:leading-8 text-[#071e17]/75 max-w-2xl">
+                A selection of learning experiences designed to improve policy understanding, compliance behavior, technical comprehension, and workflow performance.
             </p>
+
         </div>
 
-        <div class="bg-white border border-[#071e17]/10 rounded-[2rem] p-10">
-            <div class="w-12 h-px bg-[#dfc493] mb-8"></div>
-            <div class="text-[10px] uppercase tracking-[0.2em] text-[#dfc493] mb-4">
-                Analytics Alignment
-            </div>
-            <h2 class="text-2xl font-semibold mb-6">
-                Mapping learning signals to operational outcomes
-            </h2>
-            <p class="text-[#071e17]/65 leading-8">
-                Translating engagement data into measurable behavioral performance indicators.
-            </p>
+    </section>
+
+    <!-- Project Gallery -->
+    <section class="max-w-6xl mx-auto px-6 pb-20 md:pb-32">
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+            <!-- Project 1 -->
+            <a href="project-travel-expense.html" class="group bg-white border border-[#071e17]/10 rounded-[2rem] overflow-hidden hover:border-[#071e17]/25 transition-all duration-300">
+
+                <div class="aspect-[4/3] bg-[#071e17]/5 overflow-hidden">
+                    <img
+                        src="project-travel-expense.jpg"
+                        alt="Travel and Expense Policy Guide"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                </div>
+
+                <div class="p-6 md:p-8">
+
+                    <div class="w-10 h-px bg-[#dfc493] mb-6"></div>
+
+                    <div class="text-[9px] md:text-[10px] uppercase tracking-[0.2em] text-[#dfc493] font-bold mb-4">
+                        Policy Simulation
+                    </div>
+
+                    <h2 class="text-xl md:text-2xl font-semibold leading-snug mb-4">
+                        Travel and Expense Policy Guide
+                    </h2>
+
+                    <p class="text-[#071e17]/70 leading-7 mb-6">
+                        A simulated travel portal and interactive expense game designed to connect policy rules to real booking and reimbursement decisions.
+                    </p>
+
+                    <div class="flex items-center justify-between border-t border-[#071e17]/10 pt-5">
+                        <span class="text-[10px] uppercase tracking-[0.18em] text-[#071e17]/45 font-semibold">
+                            View Project
+                        </span>
+
+                        <span class="text-[#071e17] group-hover:translate-x-1 transition-transform duration-300">
+                            →
+                        </span>
+                    </div>
+
+                </div>
+
+            </a>
+
+            <!-- Project 2 -->
+            <a href="project-regulatory-compliance.html" class="group bg-white border border-[#071e17]/10 rounded-[2rem] overflow-hidden hover:border-[#071e17]/25 transition-all duration-300">
+
+                <div class="aspect-[4/3] bg-[#071e17]/5 overflow-hidden">
+                    <img
+                        src="project-regulatory-compliance.jpg"
+                        alt="Regulatory Compliance Quick Hit"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                </div>
+
+                <div class="p-6 md:p-8">
+
+                    <div class="w-10 h-px bg-[#dfc493] mb-6"></div>
+
+                    <div class="text-[9px] md:text-[10px] uppercase tracking-[0.2em] text-[#dfc493] font-bold mb-4">
+                        Adaptive Compliance
+                    </div>
+
+                    <h2 class="text-xl md:text-2xl font-semibold leading-snug mb-4">
+                        Regulatory Compliance Quick Hit
+                    </h2>
+
+                    <p class="text-[#071e17]/70 leading-7 mb-6">
+                        A scenario-video learning module that uses question performance to deliver targeted refresher content only where learners need support.
+                    </p>
+
+                    <div class="flex items-center justify-between border-t border-[#071e17]/10 pt-5">
+                        <span class="text-[10px] uppercase tracking-[0.18em] text-[#071e17]/45 font-semibold">
+                            View Project
+                        </span>
+
+                        <span class="text-[#071e17] group-hover:translate-x-1 transition-transform duration-300">
+                            →
+                        </span>
+                    </div>
+
+                </div>
+
+            </a>
+
+            <!-- Project 3 -->
+            <a href="project-technical-training.html" class="group bg-white border border-[#071e17]/10 rounded-[2rem] overflow-hidden hover:border-[#071e17]/25 transition-all duration-300">
+
+                <div class="aspect-[4/3] bg-[#071e17]/5 overflow-hidden">
+                    <img
+                        src="project-technical-training.jpg"
+                        alt="Technical Systems Training"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                </div>
+
+                <div class="p-6 md:p-8">
+
+                    <div class="w-10 h-px bg-[#dfc493] mb-6"></div>
+
+                    <div class="text-[9px] md:text-[10px] uppercase tracking-[0.2em] text-[#dfc493] font-bold mb-4">
+                        Technical Training
+                    </div>
+
+                    <h2 class="text-xl md:text-2xl font-semibold leading-snug mb-4">
+                        Technical Systems Training
+                    </h2>
+
+                    <p class="text-[#071e17]/70 leading-7 mb-6">
+                        A technical training example translating complex physical systems and procedures into clear, visual, and actionable learning.
+                    </p>
+
+                    <div class="flex items-center justify-between border-t border-[#071e17]/10 pt-5">
+                        <span class="text-[10px] uppercase tracking-[0.18em] text-[#071e17]/45 font-semibold">
+                            View Project
+                        </span>
+
+                        <span class="text-[#071e17] group-hover:translate-x-1 transition-transform duration-300">
+                            →
+                        </span>
+                    </div>
+
+                </div>
+
+            </a>
+
         </div>
+
+    </section>
+
+</main>
+
+ <!-- Footer -->
+<footer class="border-t border-[#071e17]/10 py-12 md:py-16">
+
+    <div class="max-w-6xl mx-auto px-6 flex flex-col items-center gap-6">
+
+        <!-- Logo (Centered) -->
+       
+            <img
+                src="jslearningdesign.png"
+                alt="JS Learning Design"
+                class="w-35 h-35 object-contain group-hover:opacity-80 transition-opacity"
+            />
+
+        </a>
+
+        <!-- LinkedIn (Below Logo) -->
+        <a
+            href="https://www.linkedin.com/in/jordan-shelley-fl"
+            target="_blank"
+            class="flex items-center gap-2 text-[#071e17]/60 hover:text-[#071e17] transition-colors"
+        >
+
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.05-1.86-3.05-1.86 0-2.15 1.45-2.15 2.95v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.65-1.86 3.4-1.86 3.64 0 4.31 2.4 4.31 5.51v6.24zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/>
+            </svg>
+
+            <span class="text-xs uppercase tracking-[0.2em] font-semibold">
+                LinkedIn
+            </span>
+
+        </a>
 
     </div>
 
-</main>
+</footer>
 
 </body>
 </html>
