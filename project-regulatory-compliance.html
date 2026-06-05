@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Regulatory Compliance Quick Hit | JS Learning Design</title>
+
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Editorial Serif Accent -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&display=swap" rel="stylesheet">
+
+    <style>
+        .editorial-serif {
+            font-family: "Cormorant Garamond", serif;
+        }
+
+        details summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .accordion-icon .vertical {
+            transition: opacity 200ms ease;
+        }
+
+        details[open] .accordion-icon .vertical {
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-[#071e17] antialiased selection:bg-[#dfc493]/30">
+
+    <!-- Header -->
+    <header class="border-b border-white/10 sticky top-0 bg-[#071e17]/95 backdrop-blur-md z-50">
+
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-center relative">
+
+            <!-- Left Brand Anchor -->
+            <a href="index.html" class="absolute left-6 flex items-center gap-3">
+
+                <div class="w-10 h-10 flex items-center justify-center shrink-0">
+                    <img src="logo.png" alt="JS Monogram" class="w-full h-full object-contain">
+                </div>
+
+                <!-- EXACT ORIGINAL WORDMARK STYLES -->
+                <span class="text-xl tracking-tight flex items-baseline">
+                    <span class="text-[#dfc493] font-semibold">learning</span>
+                    <span class="text-white font-light">.design</span>
+                </span>
+
+            </a>
+
+            <!-- CENTER NAV (EXACT ORIGINAL SYSTEM) -->
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center gap-8 text-[16px] font-semibold uppercase tracking-[0.22em] text-slate-300">
+                <a href="projects.html" class="hover:text-[#dfc493] transition-colors duration-300">Projects</a>
+                <a href="about.html" class="hover:text-[#dfc493] transition-colors duration-300">About</a>
+                <a href="contact.html" class="hover:text-[#dfc493] transition-colors duration-300">Contact</a>
+            </nav>
+
+            <!-- Mobile Hamburger -->
+            <button id="menuBtn" class="md:hidden absolute right-6 flex flex-col justify-center items-end gap-[5px] w-10 h-10">
+
+                <span class="w-6 h-[2px] bg-slate-200"></span>
+                <span class="w-5 h-[2px] bg-slate-200"></span>
+                <span class="w-6 h-[2px] bg-slate-200"></span>
+
+            </button>
+
+        </div>
+
+        <div id="mobileMenu" class="hidden md:hidden absolute top-20 left-0 w-full bg-[#061a14]/95 backdrop-blur-md border-b border-white/10">
+            <div class="flex flex-col px-6 py-6 gap-6 text-sm uppercase tracking-[0.2em]">
+                <a href="projects.html" class="text-slate-200">Projects</a>
+                <a href="about.html" class="text-slate-200">About</a>
+                <a href="contact.html" class="text-slate-200">Contact</a>
+            </div>
+        </div>
+
+        <script>
+            document.getElementById("menuBtn")?.addEventListener("click", () => {
+                const menu = document.getElementById("mobileMenu");
+                menu.classList.toggle("hidden");
+            });
+        </script>
+
+    </header>
+
+    <!-- Main -->
+    <main>
+
+        <!-- Project Hero -->
+        <section class="max-w-6xl mx-auto px-6 py-16 md:py-24">
+
+            <a href="projects.html" class="inline-flex items-center gap-2 text-[10px] uppercase tracking-[0.2em] text-[#071e17]/50 hover:text-[#071e17] transition-colors mb-10">
+                ← Back to Projects
+            </a>
+
+            <div class="grid lg:grid-cols-[0.95fr_1.05fr] gap-12 lg:gap-20 items-center">
+
+                <div>
+
+                    <div class="w-14 md:w-16 h-px bg-[#dfc493] mb-6 md:mb-8"></div>
+
+                    <div class="text-[10px] md:text-[11px] uppercase tracking-[0.22em] text-[#dfc493] font-bold mb-5 md:mb-6">
+                        Adaptive Compliance
+                    </div>
+
+                    <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.05] text-[#071e17] mb-6 md:mb-8">
+                        Regulatory Compliance Quick Hit
+                    </h1>
+
+                    <p class="text-base md:text-lg leading-7 md:leading-8 text-[#071e17]/75 mb-8">
+                        A scenario-based compliance module that replaced passive content review with applied decision-making, embedded questions, and targeted refresher content.
+                    </p>
+
+                    <button
+                        data-course="https://storage.googleapis.com/jslearningdesign/RegulatoryComplianceQuickHit/story.html"
+                        class="open-course inline-flex items-center gap-3 bg-[#071e17] text-white px-6 md:px-8 py-3 md:py-4 rounded-full text-xs md:text-sm uppercase tracking-[0.2em] font-semibold hover:bg-[#0d2a20] transition-colors duration-300"
+                    >
+                        Launch Course
+                    </button>
+
+                </div>
+
+                <div class="relative">
+
+                    <div class="absolute -inset-3 md:-inset-5 border border-[#071e17]/10 rounded-[2rem]"></div>
+
+                    <img
+                        src="project-regulatory-compliance.jpg"
+                        alt="Regulatory Compliance Quick Hit"
+                        class="relative w-full aspect-[4/3] object-cover rounded-[2rem] border border-[#071e17]/10 shadow-2xl"
+                    />
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Overview -->
+        <section class="max-w-6xl mx-auto px-6 py-20 md:py-28 border-t border-[#071e17]/10">
+
+            <div class="grid md:grid-cols-[0.8fr_1.2fr] gap-12 md:gap-20">
+
+                <div>
+
+                    <div class="w-14 md:w-16 h-px bg-[#dfc493] mb-6 md:mb-8"></div>
+
+                    <div class="text-[10px] md:text-[11px] uppercase tracking-[0.22em] text-[#dfc493] font-bold mb-4">
+                        Project Overview
+                    </div>
+
+                    <h2 class="text-2xl md:text-4xl font-bold tracking-tight leading-tight">
+                        The course was shorter, but it was not more effective.
+                    </h2>
+
+                </div>
+
+                <div class="space-y-6 text-[#071e17]/70 leading-7 md:leading-8">
+
+                    <p>
+                        The existing quick hit version of the regulatory compliance course was essentially a condensed version of the full course. It reduced the amount of content, but it did not change the learner experience in a meaningful way.
+                    </p>
+
+                    <p>
+                        Learners were still moving through the module passively, clicking forward as quickly as possible. The course was shorter, but it was not doing enough to help learners apply regulatory concepts in realistic situations.
+                    </p>
+
+                    <p>
+                        I redesigned the experience around scenario videos, embedded decision points, and targeted remediation. Instead of presenting all refresher content to every learner, the module used question performance to identify where additional support was needed.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Expandable Sections -->
+        <section class="max-w-4xl mx-auto px-6 py-20 md:py-28 border-t border-[#071e17]/10">
+
+            <div class="space-y-4">
+
+                <!-- Objective -->
+                <details class="group bg-white border border-[#071e17]/10 rounded-[2rem] p-6 md:p-8" open>
+                    <summary class="flex items-center justify-between cursor-pointer list-none gap-6">
+                        <span class="text-xl md:text-2xl font-semibold">Objective</span>
+
+                        <span class="accordion-icon relative w-6 h-6 shrink-0" aria-hidden="true">
+                            <span class="absolute left-1/2 top-1/2 w-5 h-[2px] bg-[#dfc493] -translate-x-1/2 -translate-y-1/2"></span>
+                            <span class="vertical absolute left-1/2 top-1/2 w-[2px] h-5 bg-[#dfc493] -translate-x-1/2 -translate-y-1/2"></span>
+                        </span>
+                    </summary>
+
+                    <div class="mt-6 space-y-5 text-[#071e17]/70 leading-7 md:leading-8">
+                        <p>
+                            The objective was to transform the quick hit from a shortened content review into an application-based learning experience.
+                        </p>
+
+                        <p>
+                            Rather than giving every learner the same condensed version of the full course, the redesigned experience needed to help learners apply regulatory concepts, answer questions in context, and receive support only where they demonstrated a need for reinforcement.
+                        </p>
+                    </div>
+                </details>
+
+                <!-- Process -->
+                <details class="group bg-white border border-[#071e17]/10 rounded-[2rem] p-6 md:p-8">
+                    <summary class="flex items-center justify-between cursor-pointer list-none gap-6">
+                        <span class="text-xl md:text-2xl font-semibold">Process</span>
+
+                        <span class="accordion-icon relative w-6 h-6 shrink-0" aria-hidden="true">
+                            <span class="absolute left-1/2 top-1/2 w-5 h-[2px] bg-[#dfc493] -translate-x-1/2 -translate-y-1/2"></span>
+                            <span class="vertical absolute left-1/2 top-1/2 w-[2px] h-5 bg-[#dfc493] -translate-x-1/2 -translate-y-1/2"></span>
+                        </span>
+                    </summary>
+
+                    <div class="mt-6 space-y-5 text-[#071e17]/70 leading-7 md:leading-8">
+                        <p>
+                            I began by rethinking the purpose of the quick hit. The goal was not simply to make the full course shorter. The goal was to create a focused experience that gave learners meaningful practice with the most important regulatory concepts.
+                        </p>
+
+                        <p>
+                            I developed scenario videos that placed the regulations into realistic workplace contexts. Rather than reading about abstract rules, learners watched situations unfold and answered questions tied to what they observed.
+                        </p>
+
+                        <p>
+                            Questions were integrated throughout the module so learners had to apply their knowledge during the experience. Based on their responses, the module then presented refresher content in areas where additional support was needed.
+                        </p>
+
+                        <p>
+                            This allowed the learning experience to feel more relevant and efficient. Learners were not required to review every piece of content equally; they received reinforcement based on demonstrated performance.
+                        </p>
+                    </div>
+                </details>
+
+                <!-- Outcome -->
+                <details class="group bg-white border border-[#071e17]/10 rounded-[2rem] p-6 md:p-8">
+                    <summary class="flex items-center justify-between cursor-pointer list-none gap-6">
+                        <span class="text-xl md:text-2xl font-semibold">Outcome</span>
+
+                        <span class="accordion-icon relative w-6 h-6 shrink-0" aria-hidden="true">
+                            <span class="absolute left-1/2 top-1/2 w-5 h-[2px] bg-[#dfc493] -translate-x-1/2 -translate-y-1/2"></span>
+                            <span class="vertical absolute left-1/2 top-1/2 w-[2px] h-5 bg-[#dfc493] -translate-x-1/2 -translate-y-1/2"></span>
+                        </span>
+                    </summary>
+
+                    <div class="mt-6 space-y-5 text-[#071e17]/70 leading-7 md:leading-8">
+                        <p>
+                            The final module created a more active learning experience. Instead of clicking through condensed content, learners were asked to interpret scenarios, answer questions, and engage with regulatory concepts in context.
+                        </p>
+
+                        <p>
+                            By using question performance to determine which refresher content appeared, the course reduced unnecessary review while giving learners more targeted support. This made the experience more efficient, more relevant, and more closely aligned to the purpose of a true quick hit.
+                        </p>
+
+                        <p>
+                            The redesign substantially improved engagement and retention by giving learners opportunities to apply their knowledge rather than simply receive information.
+                        </p>
+                    </div>
+                </details>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Course Modal -->
+    <div id="courseModal" class="hidden fixed inset-0 z-[100] bg-[#071e17]/90 backdrop-blur-md p-4 md:p-8">
+
+        <div class="bg-slate-50 w-full h-full rounded-[1.5rem] overflow-hidden flex flex-col border border-white/10 shadow-2xl">
+
+            <div class="flex items-center justify-between px-5 md:px-8 py-4 border-b border-[#071e17]/10">
+
+                <div>
+                    <div class="text-[10px] uppercase tracking-[0.2em] text-[#dfc493] font-bold">
+                        Course Preview
+                    </div>
+                    <div class="text-sm md:text-base font-semibold text-[#071e17]">
+                        Regulatory Compliance Quick Hit
+                    </div>
+                </div>
+
+                <button id="closeCourse" class="text-[#071e17]/60 hover:text-[#071e17] text-3xl leading-none">
+                    ×
+                </button>
+
+            </div>
+
+            <iframe
+                id="courseFrame"
+                src=""
+                class="w-full flex-1"
+                allowfullscreen
+            ></iframe>
+
+        </div>
+
+    </div>
+
+    <script>
+        const modal = document.getElementById("courseModal");
+        const frame = document.getElementById("courseFrame");
+        const closeButton = document.getElementById("closeCourse");
+
+        document.querySelectorAll(".open-course").forEach(button => {
+            button.addEventListener("click", () => {
+                frame.src = button.dataset.course;
+                modal.classList.remove("hidden");
+                document.body.classList.add("overflow-hidden");
+            });
+        });
+
+        closeButton?.addEventListener("click", () => {
+            modal.classList.add("hidden");
+            frame.src = "";
+            document.body.classList.remove("overflow-hidden");
+        });
+
+        modal?.addEventListener("click", (event) => {
+            if (event.target === modal) {
+                modal.classList.add("hidden");
+                frame.src = "";
+                document.body.classList.remove("overflow-hidden");
+            }
+        });
+    </script>
+
+    <!-- Footer -->
+    <footer class="border-t border-[#071e17]/10 py-12 md:py-16">
+
+        <div class="max-w-6xl mx-auto px-6 flex flex-col items-center gap-6">
+
+            <!-- Logo (Centered) -->
+            <a href="index.html" class="group">
+                <img
+                    src="jslearningdesign.png"
+                    alt="JS Learning Design"
+                    class="w-35 h-35 object-contain group-hover:opacity-80 transition-opacity"
+                />
+            </a>
+
+            <!-- LinkedIn (Below Logo) -->
+            <a
+                href="https://www.linkedin.com/in/jordan-shelley-fl"
+                target="_blank"
+                class="flex items-center gap-2 text-[#071e17]/60 hover:text-[#071e17] transition-colors"
+            >
+
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.05-1.86-3.05-1.86 0-2.15 1.45-2.15 2.95v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.65-1.86 3.4-1.86 3.64 0 4.31 2.4 4.31 5.51v6.24zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/>
+                </svg>
+
+                <span class="text-xs uppercase tracking-[0.2em] font-semibold">
+                    LinkedIn
+                </span>
+
+            </a>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
